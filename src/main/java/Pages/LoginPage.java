@@ -42,7 +42,7 @@ public class LoginPage {
     public void checkLoginUnSuccessfullErrorMessage() {
         Assert.assertEquals(WebUtilities.getElementTextWithWait(driver, FAILED_LOGIN_MESSAGE_LOCATOR),
                 "Login was unsuccessful. Please correct the errors and try again.\n" +
-                        "The credentials provided are incorrect");
+                        "No customer account found");
     }
 
     public void clickOnRecoverPassword() {

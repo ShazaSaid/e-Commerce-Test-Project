@@ -39,7 +39,7 @@ public class LoginPageTests extends MainClass {
 
     @Test
     public void loginWithInValidUser() {
-        String invalidUserEmail="test@test.com";
+        String invalidUserEmail="tests@testss.com";
         String invalidUserPassword="23232";
         homePage.goToLoginPage();
         loginPage.checkLoginPageIsDisplayed();

@@ -32,7 +32,7 @@ public class MainClass {
         newUser = new User();
         newUser.setFirstName("shaza");
         newUser.setLastName("saeed");
-        newUser.setEmail("shazasaid"+R.nextInt(50)+"@gmail.com");
+        newUser.setEmail("shazasaid"+R.nextInt(100)+"@gmail.com");
         newUser.setDayOfBirth("20");
         newUser.setMonthOfBirth("March");
         newUser.setYearOfBirth("1999");

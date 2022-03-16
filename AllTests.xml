@@ -9,4 +9,9 @@
             <class name="ProductsNavigationTests"/>
         </classes>
     </test>
+    <test name="Order Test">
+        <classes>
+            <class name="OrdersTests"/>
+        </classes>
+    </test>
 </suite>
