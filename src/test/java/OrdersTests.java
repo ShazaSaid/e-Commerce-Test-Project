@@ -43,7 +43,7 @@ public class OrdersTests extends MainClass{
         billingAddressPage.enterBillingPhoneNumber("0123456844");
         billingAddressPage.clickOnContinueOrder();
         billingAddressPage.clickOnContinueShippingMethod();
-        billingAddressPage.clickOnContinueOrder();
+        billingAddressPage.clickOnContinuePaymentMethod();
         billingAddressPage.clickOnContinuePayementInformation();
         billingAddressPage.clickOnConfirmOrder();
         billingAddressPage.checkOrderSucceeded();

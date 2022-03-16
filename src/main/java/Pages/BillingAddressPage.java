@@ -14,7 +14,8 @@ public class BillingAddressPage {
     private static final By BILLING_PHONE_NUMBER_LOCATOR = By.id("BillingNewAddress_PhoneNumber");
     private static final By CONTINUE_BUTTON_LOCATOR = By.name("save");
     private static final By CONTINUE_SHIPPING_METHOD_BUTTON = By.cssSelector(".button-1.shipping-method-next-step-button");
-    private static final By CONTINUE_PAYEMENT_INFORMATION_BUTTON = By.cssSelector(".button-1.shipping-method-next-step-button");
+    private static final By CONTINUE_PAYMENT_METHOD_BUTTON=By.cssSelector(".button-1.payment-method-next-step-button");
+    private static final By CONTINUE_PAYMENT_INFORMATION_BUTTON = By.cssSelector(".button-1.payment-info-next-step-button");
     private static final By CONFIRM_ORDER_BUTTON = By.cssSelector(".button-1.confirm-order-next-step-button");
     private static final By ORDER_SUCCESS_MESSAGE_LOCATOR = By.cssSelector(".section.order-completed .title");
 
@@ -45,13 +46,15 @@ public class BillingAddressPage {
     public void clickOnContinueOrder() {
         WebUtilities.clickElementWithWait(driver, CONTINUE_BUTTON_LOCATOR);
     }
-
+public void clickOnContinuePaymentMethod(){
+        WebUtilities.clickElementWithWait(driver,CONTINUE_PAYMENT_METHOD_BUTTON);
+}
     public void clickOnContinueShippingMethod() {
         WebUtilities.clickElementWithWait(driver, CONTINUE_SHIPPING_METHOD_BUTTON);
     }
 
     public void clickOnContinuePayementInformation() {
-        WebUtilities.clickElementWithWait(driver, CONTINUE_PAYEMENT_INFORMATION_BUTTON);
+        WebUtilities.clickElementWithWait(driver, CONTINUE_PAYMENT_INFORMATION_BUTTON);
     }
 
     public void clickOnConfirmOrder() {
